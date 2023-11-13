@@ -6,13 +6,13 @@ import org.hibernate.validator.constraints.Range;
 public class RamenCreateRequest {
 
     @NotEmpty
-    private String ramen;
-    private String ramenRestaurant;
-    private String genre;
-    private String place;
+    private final String ramen;
+    private final String ramenRestaurant;
+    private final String genre;
+    private final String place;
 
     @Range(min = 1, max = 3)
-    private int star;
+    private final int star;
 
     public RamenCreateRequest(String ramen, String ramenRestaurant, String genre, String place, int star) {
         this.ramen = ramen;

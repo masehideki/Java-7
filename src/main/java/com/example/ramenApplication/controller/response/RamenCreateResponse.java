@@ -2,7 +2,7 @@ package com.example.ramenApplication.controller.response;
 
 public class RamenCreateResponse {
 
-    private String message;
+    private final String message;
 
     public RamenCreateResponse(String message) {
         this.message = message;
